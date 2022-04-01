@@ -1,0 +1,38 @@
+body {
+  background-image: url("/open.jpg");
+  background-size: cover;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  text-align: center;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: url("./image/love.jpg");
+  background-size: cover;
+  justify-content: center;
+  color: white;
+}
+
+h2 {
+  color: yellow;
+}
+
+#message-el {
+  font-style: italic;
+}
+
+button {
+  color: #016f32;
+  width: 150px;
+  height: 1cm;
+  background-color: yellow;/*goldenrod;*/
+  border: none;
+  margin: 5px;
+}
+
+#player-el{
+  color: yellow;
+  text-decoration: underline goldenrod;
+  font-size: 30px;
+}
