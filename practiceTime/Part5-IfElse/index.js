@@ -53,13 +53,50 @@ let appleShelf = document.getElementById("apple-shelf");
 let orangeShelf = document.getElementById("orange-shelf");
 
 function add() {
-    for (let i = 0; i < fruit.length; i++){
-        if(fruit[i] === "🍎"){
-            appleShelf.textContent += fruit[i] + " ";
-        } else if (fruit[i] === "🍊"){
-            orangeShelf.textContent += fruit[i] + " ";
-        }
+  for (let i = 0; i < fruit.length; i++) {
+    if (fruit[i] === "🍎") {
+      appleShelf.textContent += fruit[i] + " ";
+    } else if (fruit[i] === "🍊") {
+      orangeShelf.textContent += fruit[i] + " ";
     }
+  }
 }
 
 add();
+
+// Truthy and falsy values
+const credits = 12;
+
+if (credits) {
+  console.log("Let's play");
+} else {
+  console.log("Sorry, you have no credits");
+}
+
+// if(0) -> js return false
+// if("") -> false
+// else -> true
+
+let currentViewers = null;
+
+currentViewers = ["Thao", "Le"];
+
+if (currentViewers) {
+  console.log("We have viewers");
+}
+
+let cViewer;
+console.log(cViewer); // underfined
+
+let cViewer1 = {};
+console.log(cViewer1.randomKey); // underfined
+
+let cViewer2 = ["item1"];
+console.log(cViewer2[5]); // underfined
+
+console.log(Boolean("")); // false
+console.log(Boolean("0")); // true
+console.log(Boolean(100)); // true
+console.log(Boolean(null)); // false
+console.log(Boolean([0])); // true
+console.log(Boolean(-0)); // FALSE cuz 0 + or - still false
